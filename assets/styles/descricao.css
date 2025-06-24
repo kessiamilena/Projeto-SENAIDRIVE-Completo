@@ -1,0 +1,202 @@
+.cabecalho {
+    background-color: #000000;
+}
+
+main {
+    padding: 50px 5%;
+}
+
+.link-voltar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 80px;
+}
+
+.seta-voltar {
+    color: #000000; 
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.link-voltar:hover {
+    color: #008080; 
+    text-decoration: underline;
+}
+
+
+/* Seção Produto */
+.secao-produto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carro-detalhe {
+    width: 30%;
+}
+
+.coluna-info-detalhe {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #53535350;
+    padding: 50px 50px 150px 60px;
+    border-image: linear-gradient(to bottom, #53535350, transparent) 100;
+}
+
+.marca-carro {
+    font-size: 1rem;
+    color: #535353;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.modelo-carro-detalhe {
+    font-size: 1.5rem; 
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 400;
+    width: 60%;
+}
+
+.ano-carro {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.divisor-info {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+.preco-carro-detalhe {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+.link-condicoes {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+.link-condicoes:hover {
+    color: #0056b3;
+}
+
+.botao {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-principal {
+    background-color: #2B858B; 
+    color: #ffffff;
+    border: 1px solid #2B858B;
+}
+
+.botao-principal:hover {
+    background-color: #006666; 
+    border-color: #006666;
+}
+
+.botao-secundario {
+    background-color: #ffffff;
+    color: #2B858B; 
+    border: 2px solid #2B858B; 
+}
+
+.botao-secundario:hover {
+    background-color: #f0fafa; 
+    color: #006666;
+    border-color: #006666;
+}
+
+/* Seção Descrição */
+
+.secao-descricao {
+    padding: 50px 0;
+    text-align: center;
+}
+.titulo-descricao {
+    font-size: 1.8rem;
+    color: #2B858B; 
+    margin-bottom: 15px;
+}
+.texto-descricao {
+    font-size: 1.1rem;
+    color: #555555;
+    max-width: 700px; 
+    margin: 0 auto; 
+}
+
+
+/* SEÇÃO IMAGEM DE FUNDO */
+
+.secao-imagem-fundo img {
+    width: 100%;
+    height: auto;
+}
+
+/* SEÇÃO INCLUSO */
+
+.secao-incluso {
+    padding: 60px 0;
+}
+
+.titulo-incluso {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #2B858B;
+    margin-bottom: 40px;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    padding: 0 20%;
+}
+
+.lista-incluso {
+    list-style: none;
+    margin: 0 auto; 
+}
+
+.lista-incluso li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding-left: 25px; 
+    position: relative; 
+    break-inside: avoid-column; 
+}
+
+.lista-incluso li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #008080;
+    border-radius: 50%; 
+    position: absolute;
+    left: 0;
+    top: 0.4em;
+}
+
+
+/* SEÇÃO VIDEO */
+
+#video-trailer {
+    width: 100%;
+}
+

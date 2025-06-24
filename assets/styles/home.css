@@ -1,0 +1,558 @@
+
+
+.cabecalho {
+    background-image: url("../imgs/Banner\ Home.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #FFFFFF;
+}
+
+.secao-banner {
+    text-align: center;
+    padding: 200px 0;
+}
+
+.conteudo-banner {
+    margin: 0 auto;
+}
+
+.secao-banner h1, h2 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.secao-banner h2 {
+    margin-bottom: 80px;
+}
+
+.destaque-amarelo {
+    color: #FFC857;
+    font-weight: bold;
+}
+
+.botao-amarelo {
+    background-color: #FFC857;
+    color: #0A2239;
+    padding: 1% 5%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* SEÇÃO VANTAGENS */
+
+.secao-vantagens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+.item-vantagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    max-width: 20%;
+}
+
+.icone-vantagem {
+    width: 20%;
+}
+
+.item-vantagem h3 {
+    font-size: 1.4rem;
+}
+
+.item-vantagem p {
+    max-width: 85%;
+}
+
+/* SEÇÃO COMO FUNCIONA */
+
+.secao-como-funciona {
+    background-color: #FFC857;
+    height: 50vh;
+    padding: 30px 160px;
+}
+
+.secao-como-funciona h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #E6B44E;
+    text-transform: uppercase;
+}
+
+.grupo-passos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+
+.passo {
+    max-width: 185px;
+    position: relative;
+}
+
+.numero-passo {
+    font-size: 10rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -145px;
+    left: -20px;
+    z-index: 0;
+}
+
+.texto-passo {
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.texto-passo h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.texto-passo p {
+    font-size: 1em;
+}
+
+/* Seção Grade de Imagens */
+.grade-imagens {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-vantagens {
+    display: grid;
+    grid-template-areas: 
+        "img1 img2 img3"
+        "img1 img4 img4";
+    gap: 10px;
+    max-width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-vantagens img:nth-child(1) { grid-area: img1; width: 100%; }
+.grid-vantagens img:nth-child(2) { grid-area: img2; width: 100%; }
+.grid-vantagens img:nth-child(3) { grid-area: img3; width: 100%; }
+.grid-vantagens img:nth-child(4) { grid-area: img4; width: 100%; }
+
+
+/* SEÇÃO MODELOS EM DESTAQUE */
+
+.sessao-carros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 100vh;
+    background-color: #0A2239
+}
+
+.cartao-carro {
+    width: 300px;
+    height: 460px;
+    perspective: 500px;
+}
+
+.cartao-conteudo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.cartao-carro:hover .cartao-conteudo {
+    transform: rotateY(180deg) scale(1.1);
+}
+
+.frente-cartao, 
+.verso-cartao {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    backface-visibility: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.frente-cartao h2 {
+    color: #2B858B;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.frente-cartao img {
+    width: 100%;
+    height: auto;
+    margin: 35% 0;
+}
+
+.cinza {
+    color: #535353;
+    font-weight: 500;
+}
+
+.preco {
+    margin-top: 5px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.verso-cartao {
+    background-color: #2B858B;
+    color: #FFFFFF;
+    transform: rotateY(180deg);
+}
+
+.verso-cartao h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.verso-cartao > p {
+    margin-bottom: 50px;
+}
+
+.verso-cartao ul {
+    margin-bottom: 50px;
+    margin-left: 10%;
+}
+
+.verso-cartao ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0.8rem auto;
+}
+
+.verso-cartao ul li img {
+    width: 8%;
+}
+
+.botao-reserva {
+    padding: 3% 20%;
+    background-color: #FFFFFF;
+    color: #535353;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: ease 0.3s;
+}
+
+.botao-reserva:hover {
+    cursor: pointer;
+    background-color: #0A2239;
+    color: #FFFFFF;
+}
+
+/* SEÇÃO MODELOS MAIS BUSCADOS */
+
+.secao-mais-buscados {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+.secao-mais-buscados h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+select {
+    padding: 0.8% 4%;
+    border-radius: 15px;
+    border: #D6D6D6 1px solid;
+    align-self: flex-end;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;   
+}
+
+option {
+    color: #535353;
+}
+
+
+.categoria-carro h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+
+.container-cards-carros {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.card-carro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 20px;
+    max-width: 30%;
+
+    border-radius: 15px;
+    border: 1px solid #E3DCDC;
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.25);
+}
+
+.card-carro img {
+    max-width: 80%;
+}
+
+.card-carro h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #2B858B; 
+}
+
+.tipo-carro {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.preco-info {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #535353;
+}
+
+.preco-valor { 
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.botao-verdeagua { 
+    background-color: #2B858B;
+    color: #ffffff;
+    padding: 10px 40px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao-verdeagua:hover {
+    background-color: #006666;
+}
+
+.link-ver-mais { 
+    display: block;
+    text-align: right;
+    margin-top: 30px;
+    color: #2B858B; 
+    font-weight: bold;
+}
+
+.link-ver-mais:hover {
+    text-decoration: underline;
+}
+
+/* Seção Avaliações */
+
+.secao-avaliacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B858B; 
+    color: #ffffff;
+    padding: 5% 10%;
+    height: 65vh;
+}
+
+.container-avaliacoes { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumo-avaliacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resumo-avaliacoes h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.avaliacao-geral {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.valor-avaliacao { 
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.baseado-avaliacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.baseado-avaliacoes p{
+    font-size: 0.9rem;
+}
+
+.item-barra-avaliacao { 
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.rotulo-barra { 
+    width: 50%; 
+}
+
+.container-barra {
+    width: 35%;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.preenchimento-barra { 
+    height: 100%;
+    background-color: #FFC857;
+    border-radius: 5px;
+}
+
+.barra-um {
+    width: 80%;
+}
+
+.barra-dois {
+    width: 96%;
+}
+
+.valor-barra {
+    font-weight: bold;
+}
+
+
+.depoimentos {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-depoimento { 
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.cabecalho-depoimento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.autor-depoimento {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.texto-depoimento { 
+    font-size: 1rem;
+    color: #eeeeee;
+    font-style: italic;
+}
+
+/*Seção Newsletter / Formulário informativo */
+
+.secao-informativo { 
+    background-image: url('../imgs/img-inscrever.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container-informativo { 
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.secao-informativo h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.secao-informativo p {
+    margin-bottom: 70px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.formulario-informativo { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formulario-informativo input[type="email"] {
+    padding: 12px 15px;
+    border: 2px solid #ffffff;
+    background: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: #ffffff;
+
+    width: 70%;
+    height: 42px;
+}
+
+.formulario-informativo input[type="email"]::placeholder {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.formulario-informativo .botao-verdeagua {
+    padding: 12px 30px;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+

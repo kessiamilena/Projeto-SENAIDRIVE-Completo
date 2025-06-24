@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.logo {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.logo span {
+    font-family: "Orbitron", sans-serif;
+    color: #2B858B;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navegacao ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegacao ul li {
+    margin-left: 25px;
+}
+
+.navegacao ul li a {
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.navegacao ul li a:hover {
+    color: #2B858B;
+}
+
+.botao-contorno {
+    padding: 8px 18px;
+    border-radius: 10px;
+    border: 2px solid #FFC857;
+    font-size: 1em;
+    font-weight: bold;
+    background: none;
+    transition: 0.3s ease;
+    color: #FFFFFF;
+}
+
+.botao-contorno:hover {
+    background-color: #FFC857;
+    cursor: pointer;
+    color: #0A0A0A;
+}
+
+
+/* --- Seção Rodapé --- */
+.rodape { 
+    background-color: #0A2239; 
+    color: #ffffff; 
+    padding: 100px 10%;
+}
+
+.container-rodape { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding-bottom: 120px;
+    gap: 20px;
+}
+
+
+.coluna-rodape h4 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #2B858B; 
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.coluna-rodape ul li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.coluna-rodape ul li a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.coluna-rodape ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.galeria-instagram {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Grade 2x2 */
+    gap: 8px;
+}
+
+.galeria-instagram img {
+    width: 100%;
+    height: auto;
+}
+
+.rodape-inferior { 
+    border-top: 1px solid #535353;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.direitos-autorais { 
+    font-size: 0.9rem;
+    color: #C3C3C3;
+    font-weight: 300;
+}
+
+.icones-sociais a {
+    margin-left: 10px;
+}
+.icones-sociais img {
+    width: 28px; 
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+.icones-sociais a img:hover {
+     opacity: 1;
+}
