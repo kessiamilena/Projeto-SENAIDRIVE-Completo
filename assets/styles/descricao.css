@@ -200,3 +200,74 @@ main {
     width: 100%;
 }
 
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+    .container-cabecalho {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .navegacao ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        align-items: center;
+    }
+
+    .secao-produto {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .carro-detalhe {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .coluna-info-detalhe {
+        padding: 30px 20px;
+        border-left: none;
+        border-top: 2px solid #53535350;
+    }
+
+    .modelo-carro-detalhe {
+        width: 100%;
+    }
+
+    .lista {
+        flex-direction: column;
+        padding: 0 10%;
+    }
+
+    .lista-incluso {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .preco-carro-detalhe {
+        font-size: 1.8rem;
+    }
+
+    .botao {
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+
+    .titulo-descricao,
+    .titulo-incluso {
+        font-size: 1.4rem;
+    }
+
+    .texto-descricao {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .seta-voltar {
+        font-size: 1rem;
+    }
+}
